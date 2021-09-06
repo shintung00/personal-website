@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/smash-favicon.png">  <title>LikeTheBodyPart</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href='/'><img class="logo" src="/img/logo.png"/></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="projects.html" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/project-wandur.html">Wandur</a>
+              <a class="dropdown-item" href="/project-vacansee.html">VacanSee</a>
+              <a class="dropdown-item" href="/project-younote.html">YouNote</a>
+              <a class="dropdown-item" href="/project-dashboard.html">Dashboard</a>
+              <a class="dropdown-item" href="/project-coup.html">Coup</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/projects.html">All</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header id="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <h1>來喝杯茶 (Lái hē bēi chá)</h1>
+          <p>Whether you're seeking advice from a former alum and/or instructor, reconnecting as a friend and/or acquaintance, or reaching out about opportunities, I'm always open for a tea chat.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card center-card">
+            <div class="card-body">
+                <h3 >
+                  <a href="https://linkedin.com/in/shintung00" target="_blank">
+                  <i class="fab fa-linkedin	" aria-hidden="true"></i>|LinkedIn
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <div class="card center-card">
+              <div class="card-body">
+                <h3 > 
+                  <a href="https://github.com/shintung00" target="_blank">
+                  <i class="fab fa-github" aria-hidden="true"></i>|GitHub
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <div class="card center-card">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <i class='fas fa-envelope'></i>|Email
+                </h3>
+                  <input type="text" value="shintung00@gmail.com" id="myEmail">
+                  <div class='button-container'>
+                    <button onclick="copyEmail()" type="button" class="btn btn-info btn-sm" data-toggle="popover" data-placement="bottom" data-content="Added to clipboard!" id='clipEmail'>Copy</button>
+                    <button onclick="location.href='mailto:shintung00@gmail.com';" type="button" class="btn btn-outline-primary btn-sm" data-toggle="tooltip" data-placement="bottom" title="Compose message!">Compose</button> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="card center-card">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class='fas fa-phone-square fa-rotate-180'></i>|Phone
+                  </h3>
+                  <input type="text" value="(919) 689-1906" id="myNumber">
+                  <div class='button-container'>
+                    <button onclick="copyNumber()" type="button" class="btn btn-info btn-sm" data-toggle="popover" data-placement="bottom" data-content="Added to clipboard!" id='clipNumber'>Copy</button>
+                    <button onclick="location.href='tel:(919) 689-1906';" type="button" class="btn btn-outline-primary btn-sm" data-toggle="tooltip" data-placement="bottom" title="Call now!">Call</button>
+                  </div>
+                </div>
+              </div>
+                  
+              <div class="card center-card">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>|Location
+                  </h3>
+                  <p>San Francisco, CA</p>
+                </div>
+              </div>
+                  
+                <!-- CAPTCHA FOR LOCALHOST -->
+                  <!-- <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6Lc0XrMZAAAAAEYYgRqj4fSFRvbErommKe0QPs6H" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                    <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                    <div class="help-block with-errors"></div>
+                </div> -->
+        </div>
+
+        <div class="col-md-8">
+          <div class="card p-4">
+            <div class="card-body">
+              <h3 class="text-center">Email Form</h3>
+              <hr>
+              <div class='center-container'>
+                <img src="/img/underconstruction.png" class='construction'>
+              </div>
+              <!-- <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone Number">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-outline-danger btn-block">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> likeTheBodyPart</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    
+    function copyEmail() {
+      var copyText = document.getElementById("myEmail");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      
+      setTimeout(function poop() {
+        $('#clipEmail').popover('hide');
+      }, 1500);
+    }
+
+    function copyNumber() {
+      var copyText = document.getElementById("myNumber");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      
+      setTimeout(function poop() {
+        $('#clipNumber').popover('hide');
+      }, 1500);
+    }
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+  </script>
+</body>
+
+</html>
