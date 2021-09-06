@@ -1,0 +1,220 @@
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: sans-serif;
+}
+
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  background: url('../img/stockwandur6.png');
+  background-size: cover;
+}
+
+
+.carousel-image-2 {
+  background: url('../img/stockvacansee.png');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('../img/stockyounote.png');
+  background-size: cover;
+}
+
+.carousel-image-4 {
+  background: url('../img/stockdashboard.png');
+  background-size: cover;
+  opacity: 1;
+
+}
+
+.skills-grid {
+  position: relative;
+  min-height: 200px;
+  background: url('../img/nightlights.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  line-height: 2.5;
+}
+
+.project-grid {
+  height: 100%;
+}
+
+#home-heading {
+  position: relative;
+  min-height: 400px;
+  background: url('../img/rain.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+  #home-heading {
+    height: 850px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  #home-heading {
+    height: 650px;
+  }
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dark-overlay-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* #video-play {
+  position: relative;
+  min-height: 200px;
+  background: url('../img/media.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play a {
+  color: #fff;
+} */
+
+#page-header {
+  height: 350px;
+  background: url('../img/stockteadrinking.png');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+.skills-grid-project {
+  position: relative;
+  min-height: 200px;
+  background: url('../img/stockproject4.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  line-height: 2.5;
+}
+
+.about-img {
+  margin-top: -50px;
+}
+
+#faq .card {
+  border: #444;
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+
+.logo {
+  /* transform: scale(0.5, 0.5); */
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.construction {
+  width: 80%;
+  height: 80%;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.center-card {
+  display: flex;
+  align-content: center;
+}
+
+.button-container {
+  margin-top: 0.5%;
+  display: flex;
+  flex-direction: row;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rounded-circle-img {
+  border-radius: 50%;
+  height: 70%;
+}
+
+.making {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.inspiration, h5, h6, p {
+  line-height: 3;
+}
+
+.demo-img {
+  height: 150px;
+}
+
+.card-project {
+  padding: 0.5rem;
+} 
+
+.skills-img {
+  height: 80px;
+}
